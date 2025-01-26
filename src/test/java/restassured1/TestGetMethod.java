@@ -14,5 +14,6 @@ public class TestGetMethod {
         reqspec.baseUri("null");
         reqspec.basePath("null");
         System.out.println(res.asPrettyString());
+        System.out.println("pallavi lambate");
     }
 }
