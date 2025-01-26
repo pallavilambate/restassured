@@ -1,6 +1,8 @@
 package restassured1;
 
-import org.junit.Test;
+
+
+import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
@@ -11,8 +13,9 @@ public class TestGetMethod {
     public void pallavimethod(){
         
         RequestSpecification reqspec=RestAssured.given();
-        reqspec.baseUri("null");
-        reqspec.basePath("null");
+        reqspec.baseUri("https://reqres.in/");
+        reqspec.basePath("api/users?page=2");
+        Response res=reqspec.get();
         System.out.println(res.asPrettyString());
         System.out.println(res.getStatusCode());
     }

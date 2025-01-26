@@ -1,5 +1,8 @@
 package restassured1;
 
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
 //import static org.junit.Assert.assertTrue;
 
 import io.restassured.RestAssured;
@@ -17,7 +20,7 @@ public class AppTest
     @Test
     public void shouldAnswerWithTrue()
     {
-        assertTrue( true );
-        RestAssured.given().contentType(null);
+        Assert.assertTrue( true );
+        RestAssured.given();
     }
 }

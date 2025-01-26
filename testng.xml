@@ -3,7 +3,7 @@
 <suite name="Suite">
     <test name="Test">
         <classes>
-           <!-- <class name="test.firstGetmethod"/> -->
+           <class name="restassured1.TestGetMethod"/>
         </classes>
     </test>
 </suite>
