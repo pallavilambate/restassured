@@ -14,6 +14,6 @@ public class TestGetMethod {
         reqspec.baseUri("null");
         reqspec.basePath("null");
         System.out.println(res.asPrettyString());
-        System.out.println(res.getStatusCode);
+        System.out.println(res.getStatusCode());
     }
 }
