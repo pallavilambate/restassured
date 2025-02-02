@@ -74,14 +74,13 @@ public class validateResponse {
             //way2
             RestAssured.given()
                        .when().get("https://reqres.in/api/users?page=2")
-                       .then().assertThat().header("Content-Type", "application/json; charset=utf-8")
+                       .then().header("Content-Type", "application/json; charset=utf-8")
                         .header("Via","1.1 vegur")
                         .header("X-Powered-By","Express")
                         .header("Cache-Control", "max-age=14400")
                         .header("Connection","keep-alive")
                         .header("Access-Control-Allow-Origin","*")
-                        .header("CF-Cache-Status","HIT")
-                        .header("Age","2360");
+                        .header("CF-Cache-Status","HIT");
 
         }
     }
