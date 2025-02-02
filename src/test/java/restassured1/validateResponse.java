@@ -81,7 +81,7 @@ public class validateResponse {
                         .header("Connection","keep-alive")
                         .header("Access-Control-Allow-Origin","*")
                         .header("CF-Cache-Status","HIT")
-                        .header("Age","2360")l
+                        .header("Age","2360");
 
         }
     }
