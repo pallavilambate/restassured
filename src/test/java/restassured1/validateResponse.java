@@ -80,7 +80,8 @@ public class validateResponse {
                         .header("Cache-Control", "max-age=14400")
                         .header("Connection","keep-alive")
                         .header("Access-Control-Allow-Origin","*")
-                        .header("CF-Cache-Status","HIT");
+                        .header("CF-Cache-Status","HIT")
+                        .header("Age","2360")l
 
         }
     }
