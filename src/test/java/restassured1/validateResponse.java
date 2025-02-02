@@ -76,6 +76,7 @@ public class validateResponse {
                        .when().get("https://reqres.in/api/users?page=2")
                        .then().assertThat().header("Content-Type", "application/json; charset=utf-8")
                         .header("Transfer-Encoding", "chunked")
+                        .header("X-Powered-By","Express")
                         .header("Connection","keep-alive");
 
         }
