@@ -75,9 +75,10 @@ public class validateResponse {
             RestAssured.given()
                        .when().get("https://reqres.in/api/users?page=2")
                        .then().assertThat().header("Content-Type", "application/json; charset=utf-8")
-                        .header("Transfer-Encoding", "chunked")
+                        .header("Via","1.1 vegur")
                         .header("X-Powered-By","Express")
-                        .header("Connection","keep-alive");
+                        .header("Connection","keep-alive")
+                        .header("Access-Control-Allow-Origin","*");
 
         }
     }
