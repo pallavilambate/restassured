@@ -79,7 +79,8 @@ public class validateResponse {
                         .header("X-Powered-By","Express")
                         .header("Cache-Control", "max-age=14400")
                         .header("Connection","keep-alive")
-                        .header("Access-Control-Allow-Origin","*");
+                        .header("Access-Control-Allow-Origin","*")
+                        .header("CF-Cache-Status","HIT");
 
         }
     }
