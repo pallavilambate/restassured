@@ -77,6 +77,7 @@ public class validateResponse {
                        .then().assertThat().header("Content-Type", "application/json; charset=utf-8")
                         .header("Transfer-Encoding", "chunked")
                         .header("X-Powered-By","Express")
+                        .header("Cache-Control", "max-age=14400")
                         .header("Connection","keep-alive");
 
         }
